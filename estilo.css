@@ -1,0 +1,42 @@
+/* Estilo común del sitio: sobrio, legible en el teléfono, con modo oscuro. */
+:root {
+  --fondo: #fbfaf7;
+  --texto: #1c1b19;
+  --suave: #5e5a52;
+  --linea: #e4e0d8;
+  --caja: #f2efe8;
+  --enlace: #1d4ed8;
+  --app: #44403c;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --fondo: #161514; --texto: #ecebe8; --suave: #a8a39a; --linea: #34312d; --caja: #22201e; --enlace: #93b4ff; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  border-top: 6px solid var(--app);
+}
+.barra, main, footer { max-width: 42rem; margin: 0 auto; padding: 0 16px; }
+.barra { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between; align-items: center; padding-top: 16px; padding-bottom: 8px; }
+.marca { font-weight: 700; color: var(--texto); text-decoration: none; }
+.idiomas { font-size: 15px; color: var(--suave); }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: 1.25rem 0 .25rem; }
+h2 { font-size: 1.25rem; margin: 2rem 0 .5rem; padding-top: .75rem; border-top: 1px solid var(--linea); }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 .25rem; }
+p, ul { margin: .5rem 0; }
+ul { padding-left: 1.25rem; }
+li { margin: .35rem 0; }
+a { color: var(--enlace); text-underline-offset: 2px; overflow-wrap: anywhere; }
+.fecha { color: var(--suave); font-size: 15px; margin-top: 0; }
+.resumen { background: var(--caja); border-left: 4px solid var(--app); border-radius: 6px; padding: 8px 16px; margin: 1rem 0; }
+.enlaces { margin-top: 2rem; font-size: 15px; }
+.apps { list-style: none; padding: 0; }
+.apps li { border-left: 4px solid var(--app); padding: 8px 12px; margin: 12px 0; background: var(--caja); border-radius: 6px; }
+.apps .que { color: var(--suave); }
+hr { border: 0; border-top: 3px double var(--linea); margin: 3rem 0 1rem; }
+footer { color: var(--suave); font-size: 14px; padding-top: 24px; padding-bottom: 32px; }
