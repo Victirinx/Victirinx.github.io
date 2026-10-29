@@ -1,4 +1,4 @@
 # app-ads.txt · MARCADOR: todavía no hay cuenta de AdMob.
-# Cuando AdMob te dé tu ID de editor (pub-…), borra el «# » de la línea de abajo y pon tu número.
+# Cuando AdMob te dé tu ID de editor (pub-…), borra el “# ” de la línea de abajo y pon tu número.
 # El archivo debe quedar en la raíz del sitio: https://TU-SITIO/app-ads.txt
 # google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
